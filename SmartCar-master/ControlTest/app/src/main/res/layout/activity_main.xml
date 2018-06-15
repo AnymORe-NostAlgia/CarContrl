@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:layout_gravity="center_vertical"
+    android:orientation="vertical"
+    tools:context="com.example.administrator.controltest.MainActivity" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/buttonConn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="连接"
+            android:onClick="clickConnect"
+            tools:layout_editor_absoluteX="94dp"
+            tools:layout_editor_absoluteY="122dp" />
+        <Button
+            android:id="@+id/buttonAvoid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="避障"
+            android:layout_marginLeft="190dp"
+            android:onClick="clickAvoid"
+            tools:layout_editor_absoluteX="94dp"
+            tools:layout_editor_absoluteY="122dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <Button
+            android:id="@+id/buttonForward"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="前进"
+            android:onClick="clickForward"
+            tools:layout_editor_absoluteX="94dp"
+            tools:layout_editor_absoluteY="122dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center">
+        <Button
+            android:id="@+id/buttonLeft"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="左"
+            android:onClick="clickLeft"
+            tools:layout_editor_absoluteX="94dp"
+            tools:layout_editor_absoluteY="122dp" />
+        <Button
+            android:id="@+id/buttonStop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="停止"
+            android:onClick="clickStop"
+            tools:layout_editor_absoluteX="94dp"
+            tools:layout_editor_absoluteY="122dp" />
+        <Button
+            android:id="@+id/buttonRight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="右"
+            android:onClick="clickRight"
+            tools:layout_editor_absoluteX="94dp"
+            tools:layout_editor_absoluteY="122dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <Button
+            android:id="@+id/buttonBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="后退"
+            android:onClick="clickBackward"
+            tools:layout_editor_absoluteX="94dp"
+            tools:layout_editor_absoluteY="122dp" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/show_values"
+        android:text="totalDistance:\ndesiredAngel:\nsleeptime:"/>
+    <Button
+        android:id="@+id/sensorOn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="开启传感器"
+        android:onClick="sensorOn"
+        tools:layout_editor_absoluteX="94dp"
+        tools:layout_editor_absoluteY="122dp" />
+
+</android.support.v7.widget.LinearLayoutCompat>
